@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+   justify-content: center;
+   background-color: #23126e;
+}
+
+.container{
+    margin-top: 20px;
+     width: 50vh;
+     height: 500px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     background-color: black;
+     align-items: center;
+     border-radius: 18px;
+     box-shadow: 2px 5px 100px 10px #ffffff;
+     
+}
+
+.pantalla{
+    width: 80%;
+    height: 120px;
+    margin: 20px;
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    text-align: right;
+}
+
+.operacion{
+    height: 60px;
+    text-align: right;
+    background-color: #ffffff;
+    border-radius: 20px 20px 0 0;
+}
+
+.resultado{
+    height: 60px;
+    text-align: right;
+    background-color: #ff000d;
+    border-radius: 0 0 20px 20px;
+    font-size: 50px;
+}
+
+.teclas{
+    width: 80%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.teclas div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.teclas div button{
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
