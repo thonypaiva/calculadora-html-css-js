@@ -5,21 +5,23 @@
 }
 body{
     display: flex;
+    flex-direction: column;
    justify-content: center;
+   align-items: center;
    background-color: #23126e;
 }
 
 .container{
     margin-top: 20px;
      width: 50vh;
-     height: 500px;
+     height: 460px;
      display: flex;
      flex-direction: column;
      gap: 20px;
      background-color: black;
      align-items: center;
      border-radius: 18px;
-     box-shadow: 2px 5px 100px 10px #ffffff;
+     box-shadow: 2px 5px 200px 5px #ffffff;
      
 }
 
@@ -27,7 +29,7 @@ body{
     width: 80%;
     height: 120px;
     margin: 20px;
-    background-color: bisque;
+    /*background-color: bisque;*/
     border-radius: 20px;
 }
 
@@ -36,6 +38,7 @@ input{
     height: 100%;
     font-size: 15px;
     text-align: right;
+    font-weight: bold;
 }
 
 .operacion{
@@ -45,12 +48,19 @@ input{
     border-radius: 20px 20px 0 0;
 }
 
+.operacion input {
+    border-radius: 20px 20px 0 0;
+    border: none;
+}
+
 .resultado{
     height: 60px;
     text-align: right;
-    background-color: #ff000d;
+    background-color: #d9d5fcd2;
     border-radius: 0 0 20px 20px;
-    font-size: 50px;
+    font-size:30px;
+    overflow: hidden;
+    align-content: center;
 }
 
 .teclas{
@@ -73,4 +83,23 @@ input{
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+}
+
+button:hover{
+    scale: 1.2;
+    border: solid 2px purple ;
+    transition: 0.5s ease all;
+}
+
+button:active{
+    scale: 0.8;
+    transition: 0.5s ease all;
+
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: system-ui, 
 }
